@@ -1,0 +1,42 @@
+{
+  "name": "celebs",
+  "version": "0.1.0",
+  "description": "Package built to access the Pantheon Fame 1.0 database.",
+  "main": "celebs.js",
+  "scripts": {
+    "test": "mocha test",
+    "ex":   "node ex/main-example.js",
+    "exAll": "node ex/all.js",
+    "process": "node data/process.csv"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALMaclaine/celebs.git"
+  },
+  "keywords": [
+    "Celebrity",
+    "Fame",
+    "Famous",
+    "Celeb",
+    "Celebs",
+    "Database",
+    "Information",
+    "Access",
+    "People"
+  ],
+  "author": "Alessandro Maclaine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ALMaclaine/celebs/issues"
+  },
+  "homepage": "https://github.com/ALMaclaine/celebs#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "is": "^3.2.1",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "csv": "^1.1.1",
+    "jsonfile": "^4.0.0"
+  }
+}
