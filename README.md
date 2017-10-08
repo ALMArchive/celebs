@@ -18,7 +18,7 @@ celeb.then((elem) => console.log(elem[0])); // 11241 items
 
 ## Citation
 
-### Built on the Pantheon 1.0, Verified Dataset of Globally Famous Biographies
+*Built on the Pantheon 1.0, Verified Dataset of Globally Famous Biographies*
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/28201
 
 ## Main Example
