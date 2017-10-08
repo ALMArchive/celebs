@@ -11,5 +11,5 @@ let celeb2 = new Celebs("no-views", "all");
 // all loads all the data columns
 let celeb3 = new Celebs("views","all");
 
-// Naming a specific individual column, that will be loaded instead
-let celeb3 = new Celebs("views","all");
+// If a specific data column is passed in it will attempt to load that instead
+let celeb4 = new Celebs("views","all");

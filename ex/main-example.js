@@ -11,13 +11,10 @@ let celeb2 = new Celebs("no-views", "all");
 // all loads all the data columns
 let celeb3 = new Celebs("views","all");
 
-// Naming a specific individual column, that will be loaded instead
-let celeb3 = new Celebs("views","all");
+// If a specific data column is passed in it will attempt to load that instead
+let celeb4 = new Celebs("views","all");
 
-// Creating a new Celebs returns a promise wrapping the data set
-let celeb = new Celebs("views","all");
-
-console.log(celeb.constructor.name === "Promise"); // true
+console.log(celeb4.constructor.name === "Promise"); // true
 
 // You can process the data using then and passing a function
-celeb.then((elem) => console.log(elem)); // 11241 items
+celeb4.then((elem) => console.log(elem)); // 11241 items

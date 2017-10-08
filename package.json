@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha test",
     "ex":   "node ex/main-example.js",
-    "exAll": "node ex/all.js",
+    "exAll": "node ex/runAll.js",
     "process": "node data/process.csv"
   },
   "repository": {
