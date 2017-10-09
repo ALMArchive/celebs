@@ -3,7 +3,6 @@
 const fs       = require("fs");
 const path     = require("path");
 const basename = path.basename(module.filename);
-const alls = [];
 
 fs.readdirSync(__dirname)
   .filter(function(file) {
