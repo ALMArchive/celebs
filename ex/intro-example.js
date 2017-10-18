@@ -1,11 +1,11 @@
 "use strict";
 
-const Celebs = require("../celebs.js");
+const celebs = require("../celebs.js");
 
-let celeb = new Celebs("views","all");
+let celeb = celebs("views","all");
 
-celeb.then((elem) => console.log(elem[0])); // 11241 items
-//{ en_curid: '307',
+celeb.map((elem) => console.log(elem)); // 11241 items
+  // [{ en_curid: '307',
   // name: 'Abraham Lincoln',
   // numlangs: '131',
   // birthcity: 'Hodgenville', ...

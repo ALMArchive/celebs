@@ -1,11 +1,9 @@
 "use strict";
 
-const Celebs = require("../celebs.js");
+const celebs = require("../celebs.js");
 
-// Creating a new Celebs returns a promise wrapping the data set
-let celeb = new Celebs("views","all");
-
-console.log(celeb.constructor.name === "Promise"); // true
+// Creating a new celebs returns a promise wrapping the data set
+let celeb = celebs("views","all");
 
 // You can process the data using then and passing a function
-celeb.then((elem) => console.log(elem)); // 11241 items
+celeb.map((elem) => console.log(elem)); // 11241 items
