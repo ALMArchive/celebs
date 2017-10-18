@@ -2,8 +2,8 @@
 
 const celebs = require("../celebs.js");
 
-// Creating a new celebs returns a promise wrapping the data set
+// Calling celebs returns object of data
 let celeb = celebs("views","all");
 
-// You can process the data using then and passing a function
+// You can process the array of data
 celeb.map((elem) => console.log(elem)); // 11241 items
