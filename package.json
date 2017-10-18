@@ -1,6 +1,6 @@
 {
   "name": "celebs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Package built to access the Pantheon Fame 1.0 database.",
   "main": "celebs.js",
   "scripts": {
