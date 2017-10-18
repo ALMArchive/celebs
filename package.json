@@ -5,7 +5,7 @@
   "main": "celebs.js",
   "scripts": {
     "test": "mocha test",
-    "ex":   "node ex/main-example.js",
+    "ex": "node ex/main-example.js",
     "exAll": "node ex/runAll.js",
     "process": "node data/process.csv"
   },
