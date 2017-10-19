@@ -42,17 +42,16 @@ celeb4.map((elem) => console.log(elem)); // 11241 items
 ## API
 
 ### Celebs
-Main class, constructor takes valid file path parameters and returns Celebs.
-Invalid first parameter, type, will throw an error.
+Main class, constructor takes valid file path parameters and returns an object.
 
-#### Construction
+#### Init
 ```javascript
 // First parameter must be views or no-views
 // views are access data for how many times the artists were searched for
 let celeb1 = celebs("views","all");
 let celeb2 = celebs("no-views", "all");
 
-// The second parameter must be a string for the data set you want to load
+// The second parameter must be the property of the data set you want to load
 // all loads all the data columns
 let celeb3 = celebs("views","all");
 
