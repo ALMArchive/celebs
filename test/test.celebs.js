@@ -1,9 +1,7 @@
 "use strict"
 
-const chai = require("chai");
+const chai   = require("chai");
 const celebs = require("../celebs.js");
-const is   = require("is");
-const passIns = ["",1,()=>{},[],{},null,undefined,Symbol("")];
 
 describe("Celebs", function() {
    describe("Data Test", function() {

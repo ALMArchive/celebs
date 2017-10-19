@@ -47,8 +47,6 @@ Invalid first parameter, type, will throw an error.
 
 #### Construction
 ```javascript
-const celebs = require("../celebs.js");
-
 // First parameter must be views or no-views
 // views are access data for how many times the artists were searched for
 let celeb1 = celebs("views","all");
@@ -63,10 +61,8 @@ let celeb4 = celebs("views","all");
 ```
 
 #### Using Data
-To use data, resolve the promise passed after construction with then.
+To use data, call celebs with the appropriate parameters, returns an object.
 ```javascript
-const celebs = require("../celebs.js");
-
 // Calling celebs returns object of data
 let celeb = celebs("views","all");
 
