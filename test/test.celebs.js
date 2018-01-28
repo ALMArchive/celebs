@@ -1,7 +1,5 @@
-"use strict"
-
 const chai   = require("chai");
-const celebs = require("../celebs.js");
+import celebs from "../celebs";
 
 describe("Celebs", function() {
    describe("Data Test", function() {
