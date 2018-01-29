@@ -1,6 +1,6 @@
 "use strict";
 
-const celebs = require("../celebs.js");
+import celebs from "../celebs";
 
 // First parameter must be views or no-views
 // views are access data for how many times the artists were searche for

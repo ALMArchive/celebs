@@ -1,4 +1,4 @@
-const chai   = require("chai");
+import chai from "chai";
 import celebs from "../celebs";
 
 describe("Celebs", function() {

@@ -4,9 +4,9 @@
   "description": "Package built to access the Pantheon Fame 1.0 database.",
   "main": "celebs.js",
   "scripts": {
-    "test": "mocha test --compilers js:babel-register --require babel-polyfill",
-    "ex": "node ex/main-example.js",
-    "exAll": "node ex/runAll.js",
+    "test": "mocha -r @std/esm test",
+    "ex": "node -r @std/esm ex/main-example.js",
+    "exAll": "node -r @std/esm ex/runAll.js",
     "process": "node data/process.csv"
   },
   "repository": {
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/ALMaclaine/celebs#readme",
   "devDependencies": {
+    "@std/esm": "^0.20.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -45,10 +46,10 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.0",
+    "is": "^3.2.1",
     "mocha": "^3.5.3",
     "randexp": "^0.4.6",
-    "webpack": "^3.10.0",
-    "is": "^3.2.1"
+    "webpack": "^3.10.0"
   },
   "dependencies": {
     "csv": "^1.1.1",

@@ -1,6 +1,6 @@
 "use strict";
 
-const celebs = require("../celebs.js");
+import celebs from "../celebs";
 
 // Calling celebs returns object of data
 let celeb = celebs("views","all");
