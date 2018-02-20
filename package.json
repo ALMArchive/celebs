@@ -4,7 +4,8 @@
   "description": "Package built to access the Pantheon Fame 1.0 database.",
   "main": "dist/celebs.js",
   "files": [
-    "dist"
+    "dist",
+    "data"
   ],
   "scripts": {
     "test": "mocha -r @std/esm test",
