@@ -4,10 +4,11 @@ import path from "path";
 export default {
   entry: {
     "celebs": "./celebs.js",
-    "celebs.min": "./celebs.js"
   },
   target: 'node',
   output: {
+    library: "celebs",
+    libraryTarget: "umd",
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js"
   },

@@ -2,12 +2,17 @@
   "name": "celebs",
   "version": "0.1.9",
   "description": "Package built to access the Pantheon Fame 1.0 database.",
-  "main": "celebs.js",
+  "main": "dist/celebs.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "mocha -r @std/esm test",
     "ex": "node -r @std/esm ex/main-example.js",
     "exAll": "node -r @std/esm ex/runAll.js",
-    "process": "node data/process.csv"
+    "process": "node data/process.csv",
+    "build": "webpack",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,14 +36,16 @@
   },
   "homepage": "https://github.com/ALMaclaine/celebs#readme",
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.40",
+    "@babel/plugin-syntax-import-meta": "^7.0.0-beta.40",
+    "@babel/polyfill": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/register": "^7.0.0-beta.40",
     "@std/esm": "^0.20.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-register": "^6.26.0",
-    "celebs": "^0.1.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
     "chai": "^4.1.2",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
@@ -48,10 +55,10 @@
     "eslint-plugin-react": "^7.6.0",
     "is": "^3.2.1",
     "mocha": "^3.5.3",
-    "randexp": "^0.4.6",
     "webpack": "^3.10.0"
   },
   "dependencies": {
+    "babel-plugin-dynamic-import-webpack": "^1.0.2",
     "csv": "^1.1.1",
     "jsonfile": "^4.0.0"
   }
