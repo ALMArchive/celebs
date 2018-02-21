@@ -2,11 +2,7 @@
   "name": "celebs",
   "version": "0.1.11",
   "description": "Package built to access the Pantheon Fame 1.0 database.",
-  "main": "dist/celebs.js",
-  "files": [
-    "dist",
-    "data"
-  ],
+  "main": "celebs.dist.js",
   "scripts": {
     "test": "mocha -r @std/esm test",
     "ex": "node -r @std/esm ex/main-example.js",
@@ -37,6 +33,7 @@
   },
   "homepage": "https://github.com/ALMaclaine/celebs#readme",
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
     "@babel/core": "^7.0.0-beta.40",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.40",
     "@babel/plugin-syntax-import-meta": "^7.0.0-beta.40",

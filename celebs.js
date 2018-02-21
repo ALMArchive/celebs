@@ -11,5 +11,6 @@ export default function celebs(views, cat) {
     end = `individual/${cat}.json`;
   }
   const file = path.join(dirpath, `/data/json/${views}/${end}`);
+  console.log(`##${dirpath}`);
   return jsonfile.readFileSync(`${file}`);
 }

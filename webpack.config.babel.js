@@ -6,11 +6,14 @@ export default {
     "celebs": "./celebs.js",
   },
   target: 'node',
+  node: {
+    __dirname: false
+  },
   output: {
     library: "celebs",
     libraryTarget: "umd",
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name].js"
+    path: __dirname,
+    filename: "[name].dist.js"
   },
   module: {
     rules: [
