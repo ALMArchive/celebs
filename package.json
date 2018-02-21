@@ -3,6 +3,9 @@
   "version": "0.1.12",
   "description": "Package built to access the Pantheon Fame 1.0 database.",
   "main": "celebs.dist.js",
+  "files": [
+    "celebs.dist.js"
+  ],
   "scripts": {
     "test": "mocha -r @std/esm test",
     "ex": "node -r @std/esm ex/main-example.js",
