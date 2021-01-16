@@ -1,6 +1,6 @@
 {
   "name": "celebs",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Package built to access the Pantheon Fame 1.0 database.",
   "main": "celebs.dist.js",
   "files": [
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ALMaclaine/celebs.git"
+    "url": "git+https://github.com/almtechhub/celebs.git"
   },
   "keywords": [
     "Celebrity",
@@ -33,9 +33,9 @@
   "author": "Alessandro Maclaine",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ALMaclaine/celebs/issues"
+    "url": "https://github.com/almtechhub/celebs/issues"
   },
-  "homepage": "https://github.com/ALMaclaine/celebs#readme",
+  "homepage": "https://github.com/almtechhub/celebs#readme",
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.40",
     "@babel/core": "^7.0.0-beta.40",
